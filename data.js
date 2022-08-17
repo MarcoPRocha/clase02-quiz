@@ -14,4 +14,4 @@ export const data = [
       choices: ["Translated into its machine code", "Translated into a low level language", "Translated into a high level language"],
       answer: "Translated into its machine code",
     },
-  ]; //26:43
+  ]; 
