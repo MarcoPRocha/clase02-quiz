@@ -6,15 +6,18 @@ export class Quiz {
     }
 
     getCurrentQuestion (){
-        return this.question[this.questionIndex]
+        return this.questions[this.questionIndex]
     }
 
-    continue (answer){
+    validateAndContinue (answer){
+        console.log(answer)
        if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
         this.score++
-    }
+        }
         this.questionIndex++
     }
+
+    
 
     isEnded () {
         return this.question.length === this.questionIndex
