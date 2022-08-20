@@ -20,7 +20,7 @@ export class Quiz {
     
 
     isEnded () {
-        return this.question.length === this.questionIndex
+        return this.questions.length === this.questionIndex
     }
 
 }
