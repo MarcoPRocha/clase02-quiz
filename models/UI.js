@@ -26,7 +26,9 @@ export class UI {
          element.innerHTML = quizEndHTML
     }
    
+    showProgress(currentIndex, total) {
+        const element = document.getElementById ('progress')
+        element.innerHTML = `Question ${currentIndex} of ${total}`
+    }
         
-
-    
 }
